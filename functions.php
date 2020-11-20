@@ -235,7 +235,9 @@ function nitropack_handle_webhook() {
                 foreach ($urls as $url) {
                     $sanitizedUrl = nitropack_sanitize_url_input($url);
                     if ($proxyPurgeOnly) {
-                        $nitro->purgeProxyCache($sanitizedUrl);
+                        if (null !== $nitro = get_nitropack_sdk($siteConfig["siteId"], $siteConfig["siteSecret"]) ) {
+                            $nitro->purgeProxyCache($sanitizedUrl);
+                        }
                         do_action('nitropack_integration_purge_url', $sanitizedUrl);
                     } else {
                         nitropack_sdk_purge_local($sanitizedUrl);
@@ -243,7 +245,9 @@ function nitropack_handle_webhook() {
                 }
             } else {
                 if ($proxyPurgeOnly) {
-                    $nitro->purgeProxyCache();
+                    if (null !== $nitro = get_nitropack_sdk($siteConfig["siteId"], $siteConfig["siteSecret"]) ) {
+                        $nitro->purgeProxyCache();
+                    }
                     do_action('nitropack_integration_purge_all');
                 } else {
                     nitropack_sdk_purge_local();

@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'NitroPack\\SDK\\' => array($baseDir . '/NitroPack/SDK'),
-    'NitroPack\\' => array($vendorDir . '/nitropack/httpclient/src', $vendorDir . '/nitropack/url/src'),
+    'NitroPack\\' => array($vendorDir . '/nitropack/url/src', $vendorDir . '/nitropack/httpclient/src'),
 );

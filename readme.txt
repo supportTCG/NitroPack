@@ -4,7 +4,7 @@ Tags: cache,perfomance,optimize,pagespeed,lazy load,cdn,critical css,compression
 Requires at least: 4.7
 Tested up to: 5.5
 Requires PHP: 5.3
-Stable tag: trunk
+Stable tag: 1.3.20
 License: GNU General Public License, version 2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -168,6 +168,9 @@ No. We’ve designed NitroPack to be a very lightweight solution that adds no CP
 2. Dashboard - see and manage the data in your Nitropack.io
 
 == Changelog ==
+
+= 1.3.20 =
+* Bug fix: Resolve an issue with reverse proxy cache purge through the webhook
 
 = 1.3.19 =
 * Improvement: Stability improvements

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8fcbb1a5ffa2542d92b974779798cb81
+class ComposerStaticInit3dcb0cd3b9802939155e959c3c6cfd5d
 {
     public static $prefixLengthsPsr4 = array (
         'N' => 
@@ -21,16 +21,21 @@ class ComposerStaticInit8fcbb1a5ffa2542d92b974779798cb81
         ),
         'NitroPack\\' => 
         array (
-            0 => __DIR__ . '/..' . '/nitropack/httpclient/src',
-            1 => __DIR__ . '/..' . '/nitropack/url/src',
+            0 => __DIR__ . '/..' . '/nitropack/url/src',
+            1 => __DIR__ . '/..' . '/nitropack/httpclient/src',
         ),
+    );
+
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8fcbb1a5ffa2542d92b974779798cb81::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8fcbb1a5ffa2542d92b974779798cb81::$prefixDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3dcb0cd3b9802939155e959c3c6cfd5d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3dcb0cd3b9802939155e959c3c6cfd5d::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3dcb0cd3b9802939155e959c3c6cfd5d::$classMap;
 
         }, null, ClassLoader::class);
     }

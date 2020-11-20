@@ -3,7 +3,7 @@
 Plugin Name:  NitroPack
 Plugin URI:   https://nitropack.io/download/plugin/nitropack-for-wordpress
 Description:  Everything you need for a fast website. Simple set up, easy to use, awesome support. Caching, Lazy Loading, Minification, Defer CSS/JS, CDN and more!
-Version:      1.3.19
+Version:      1.3.20
 Author:       NitroPack LLC
 Author URI:   https://nitropack.io/
 License:      GPL2
